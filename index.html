@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patton Church Web Sites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0C2340 0%, #BD3039 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 60px 40px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #0C2340;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .welcome-message {
+            font-size: 1.3em;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .contact-section {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .contact-info {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: #BD3039;
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(189, 48, 57, 0.4);
+            cursor: pointer;
+        }
+
+        .email-link:hover {
+            transform: translateY(-2px);
+            background: #C41E3A;
+            box-shadow: 0 6px 20px rgba(189, 48, 57, 0.6);
+        }
+
+        .email-link:active {
+            transform: translateY(0);
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .welcome-message {
+                font-size: 1.1em;
+            }
+
+            .container {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Patton Church Web Sites</h1>
+        
+        <p class="welcome-message">
+            We create beautiful, functional websites for Gospel-centered local churches. 
+            Our purpose is simple: to help your church reach your community with the gospel.
+            We can also help with other church-related tech needs.
+        </p>
+
+        <div class="contact-section">
+            <p class="contact-info">
+                Have questions or ready to get started?
+            </p>
+            
+            <a href="mailto:chris@pattonchurchsites.com" class="email-link">
+                Send Us an Email
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
